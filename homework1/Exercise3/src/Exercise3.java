@@ -22,8 +22,8 @@ public class Exercise3 {
     // no magic numbers here
     private static final int MIN_ROW_COUNT = 1;
     private static final int MAX_ROW_COUNT = 80;
-    private static final char EDGE_CHAR = '^';
-    private static final char FILL_CHAR = '-';
+    private static final char EDGE_CHAR = '*';
+    private static final char FILL_CHAR = ' ';
 
     // MAIN
     public static void main(String[] args) {
