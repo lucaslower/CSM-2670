@@ -1,0 +1,65 @@
+Exercise3 --- Test Cases
+
+Test 1:
+	HW	==> 100
+	EXAM	==> 100
+	Expected Output:
+		A | 66.67 -- 100.00
+		B | 33.33 -- 66.63
+		C | 0.00 -- 33.30
+		D | Impossible
+		F | Impossible
+Test 2:
+	HW	==> 0
+	EXAM	==> 0
+	Expected Output:
+		A | Impossible
+		B | Impossible
+		C | Impossible
+		D | Impossible
+		F | 0.00 -- 100.00
+Test 3:
+	HW	==> 96
+	EXAM	==> 85
+	Expected Output:
+		A | 90.67 -- 100.00
+		B | 57.33 -- 90.63
+		C | 24.00 -- 57.30
+		D | 0.00 -- 23.97
+		F | Impossible
+Test 4:
+	HW	==> 96
+	EXAM	==> 80.5
+	Expected Output:
+		A | 93.67 -- 100.00
+		B | 63.33 -- 96.63
+		C | 30.00 -- 63.30
+		D | 0.00 -- 29.97
+		F | Impossible
+Test 5:
+	HW	==> 53.62
+	EXAM	==> 94.5
+	Expected Output:
+		A | Impossible
+		B | 87.05 -- 100.00
+		C | 53.71 -- 87.01
+		D | 3.71 -- 53.68
+		F | 0.00 -- 3.68
+Test 6:
+	HW	==> 56.2
+	EXAM	==> 45.86
+	Expected Output:
+		A | Impossible
+		B | Impossible
+		C | Impossible
+		D | 65.99 -- 100.00
+		F | 0.00 -- 65.95
+Test 7:
+	HW	==> 85.5
+	EXAM	==> 48.9
+	Expected Output:
+		A | Impossible
+		B | Impossible
+		C | 82.63 -- 100.00
+		D | 32.63 -- 82.60
+		F | 0.00 -- 32.60

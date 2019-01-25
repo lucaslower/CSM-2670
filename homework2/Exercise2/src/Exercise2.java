@@ -85,6 +85,6 @@ public class Exercise2 {
         }
         // print
         System.out.println();
-        System.out.printf("Your final course grade: %C (%.2f)", letter, grade);
+        System.out.printf("Your final course grade: %C (%.2f)\n", letter, grade);
     }
 }

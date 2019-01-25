@@ -1,0 +1,33 @@
+Exercise2 --- Test Cases
+
+// expected outputs are listed after the test number,
+// and inputs are listed below.
+
+Test 1: "A (100.00)"
+	HW	==> 100
+	EXAM	==> 100
+	FINAL	==> 100
+Test 2: "F (0.00)"
+	HW	==> 0
+	EXAM	==> 0
+	FINAL	==> 0
+Test 3: "A (90.40)"
+	HW	==> 96
+	EXAM	==> 85
+	FINAL	==> 92
+Test 4:	"B (81.10)"
+	HW	==> 96
+	EXAM	==> 80.5
+	FINAL	==> 67
+Test 5: "C (75.49)"
+	HW	==> 53.62
+	EXAM	==> 94.5
+	FINAL	==> 72
+Test 6: "D (58.60)"
+	HW	==> 56.2
+	EXAM	==> 45.86
+	FINAL	==> 78
+Test 7: "F (51.81)"
+	HW	==> 85.5
+	EXAM	==> 48.9
+	FINAL	==> 22
