@@ -1,3 +1,13 @@
+/*
+CSM 2670 -- Homework 2
+Lucas Lower
+01/24/2019
+
+Exercise1.java
+
+Prints the sum of the first n fractions of the form 1/n
+Usage: Exercise1 [NUMBER OF TERMS (integer)]
+ */
 public class Exercise1 {
 
     public static void main(String[] args) {

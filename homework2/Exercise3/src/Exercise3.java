@@ -1,3 +1,13 @@
+/*
+CSM 2670 -- Homework 2
+Lucas Lower
+01/24/2019
+
+Exercise3.java
+
+Prompts the user for their homework average and exam average, then prints a table of final exam grade ranges and the corresponding final letter grade
+Usage: Exercise3 (interactive)
+ */
 import java.util.*;
 
 public class Exercise3 {

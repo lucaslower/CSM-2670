@@ -1,3 +1,13 @@
+/*
+CSM 2670 -- Homework 2
+Lucas Lower
+01/24/2019
+
+Exercise4.java
+
+Prints the details of a random-walk starting from (X_ORIG, Y_ORIG), taking single steps in a single direction. Terminates once (X_ORIG, Y_ORIG) is reached again.
+Usage: Exercise4
+ */
 import java.util.*;
 
 public class Exercise4 {

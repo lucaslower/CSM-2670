@@ -1,3 +1,13 @@
+/*
+CSM 2670 -- Homework 2
+Lucas Lower
+01/24/2019
+
+Exercise2.java
+
+Prompts the user for their homework average, exam average, and final exam score, then prints their final calculated grade.
+Usage: Exercise2 (interactive)
+ */
 import java.util.*;
 
 public class Exercise2 {
