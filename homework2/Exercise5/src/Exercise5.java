@@ -35,7 +35,13 @@ public class Exercise5 {
             }
 
             // determine max field length
-            long[] max_coefficients = binomial(num_rows-1);
+            long[] max_coefficients;
+            if(args.length == 2){
+                max_coefficients = binomial(num_rows-1, modulus);
+            }
+            else{
+                max_coefficients = binomial(num_rows-1);
+            }
             long max_val = 0;
             for(long val : max_coefficients){
                 if(val > max_val){
@@ -61,16 +67,15 @@ public class Exercise5 {
                     System.out.print(" ");
                 }
                 // print row terms
-                long[] coefficients = binomial(i);
+                long[] coefficients;
+                if(args.length == 2){
+                    coefficients = binomial(i, modulus);
+                }
+                else{
+                    coefficients = binomial(i);
+                }
                 for(long coeff : coefficients){
-                    // compute mod if arg is set
-                    if(args.length == 2){
-                        System.out.printf("%"+field_length+"d", coeff % modulus);
-                    }
-                    // no mod, print normal
-                    else{
-                        System.out.printf("%"+field_length+"d", coeff);
-                    }
+                    System.out.printf("%"+field_length+"d", coeff);
                 }
                 // newline
                 System.out.println();
@@ -105,6 +110,17 @@ public class Exercise5 {
         // loop through terms
         for(int i = 0; i < exp+1; i++){
             coefficients[i] = choose(exp, exp-(exp-i));
+        }
+        // return
+        return coefficients;
+    }
+
+    private static long[] binomial(int exp, int modulus){
+        // init return array
+        long[] coefficients = new long[exp+1];
+        // loop through terms
+        for(int i = 0; i < exp+1; i++){
+            coefficients[i] = choose(exp, exp-(exp-i)) % modulus;
         }
         // return
         return coefficients;
