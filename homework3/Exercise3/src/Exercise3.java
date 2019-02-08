@@ -13,7 +13,7 @@ my code without an easy way to sort hashmaps by value.
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class Exercise3 {
 
     private static final Scanner INPUT = new Scanner(System.in);
 
