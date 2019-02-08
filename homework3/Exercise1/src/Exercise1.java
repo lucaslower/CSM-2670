@@ -26,68 +26,103 @@ public class Exercise1 {
     // MAIN
     public static void main(String[] args) throws FileNotFoundException {
 
-        // init args
-        boolean debug = false;
-        boolean num_set = false;
+        // init fortune num for try block
         int fortune_num = 0;
-
-        // check for debug
-        if(Arrays.asList(args).contains("debug")){
-            debug = true;
-        }
 
         // get the first int out of the array (if there is one)
         for(String arg : args){
             try{
                 fortune_num = Integer.valueOf(arg);
-                num_set = true;
-                break;
+                // ignore 0 if present
+                if(fortune_num != 0){
+                    break;
+                }
             }
             catch(NumberFormatException ex){
+                // skip non-integers
                 continue;
             }
         }
 
-        // get fortune count
-        int num_fortunes = fortune_count(FILE_NAME);
-        if(num_fortunes == -1){
-            System.exit(-1);
+        // parse fortunes into arraylist
+        ArrayList<ArrayList<String>> fortunes = parse_fortunes();
+        int fortune_count = fortunes.size();
+
+        // check for
+        if(fortune_num != 0){
+            if(fortune_num > fortune_count){
+                print_error("The fortune number you supplied does not exist---your file only has " + fortune_count + " fortunes in it.");
+                System.exit(1);
+            }
+            else if(fortune_num < 0){
+                print_error("The fortune number you supplied is negative! If you want a negative fortune, you should look in a mirror.");
+                System.exit(1);
+            }
+            print_fortune(fortune_num, fortunes);
+        }
+        else{
+            fortune_num = print_fortune(fortunes);
         }
 
         // print information if debugging
-        if(debug == true){
-            System.out.println("Debug Information:");
-            System.out.println("Fortune count: "+num_fortunes);
-            if(num_set == true){
+        if(Arrays.asList(args).contains("debug")){
+            System.out.println("Debug Info -----------------------");
+            System.out.println("Fortune count: "+fortune_count);
+            if(fortune_num != 0){
                 System.out.println("Fortune number supplied: "+fortune_num);
             }
             else{
-                System.out.println("No number chosen, using random: ");
+                System.out.println("No number chosen, using random: "+fortune_num);
             }
         }
     }
 
-    private static int fortune_count(String file_name) throws FileNotFoundException{
-        // determine fortune count
-        File f = new File(file_name);
-        int num_fortunes = -1;
+    // print fortune given a fortune number
+    private static void print_fortune(int fortune_num, ArrayList<ArrayList<String>> fortunes){
+        ArrayList<String> fortune = fortunes.get(fortune_num-1); // minus one because fortunes are 1-indexed for end-user
+        print_message(fortune);
+        print_character();
+    }
+
+    // print function (generate fortune number)
+    private static int print_fortune(ArrayList<ArrayList<String>> fortunes){
+        int num_fortunes = fortunes.size();
+        int fortune_num = (new Random()).nextInt(num_fortunes);
+        print_fortune(fortune_num, fortunes);
+        return fortune_num;
+    }
+
+    private static ArrayList<ArrayList<String>> parse_fortunes() throws FileNotFoundException{
+        // init file
+        File f = new File(FILE_NAME);
+        // init return list
+        ArrayList<ArrayList<String>> fortunes = new ArrayList<>();
         // file exists
         if(f.exists()){
-            num_fortunes = 0;
-            Scanner f_scan = new Scanner(f);
-            String line = "";
-            while(f_scan.hasNextLine()){
-                line = f_scan.nextLine();
-                if(line == "%"){
-                    num_fortunes++;
+            // init file scanner and arraylist for fortune storage
+            Scanner reader = new Scanner(f);
+            ArrayList<String> fortune = new ArrayList<>();
+            // loop through all lines
+            while(reader.hasNext()){
+                String line = reader.nextLine();
+                if(line.equals("%")){
+                    // push (copy of) fortune into fortunes, clear fortune
+                    // p.s. this is where I learned the hard way about reference vs. value
+                    fortunes.add(new ArrayList<>(fortune));
+                    fortune.clear();
+                }
+                else{
+                    // push line into fortune
+                    fortune.add(line);
                 }
             }
-            return num_fortunes;
+            return fortunes;
         }
         // file doesn't exist
         else{
-            System.err.println("Cannot find the \"fortunes.txt\" file. Exiting . . ");
-            return num_fortunes;
+            print_error("Cannot find the \"fortunes.txt\" file. Exiting!");
+            System.exit(1);
+            return null;
         }
     }
 
@@ -99,9 +134,20 @@ public class Exercise1 {
         return ret_str;
     }
 
+    private static ArrayList<String> filter_tabs(ArrayList<String> lines){
+        ArrayList<String> ret = new ArrayList<>();
+        for(String line : lines){
+            line = line.replaceAll("\t", "    ");
+            ret.add(line);
+        }
+        return ret;
+    }
+
 
     // PRINT MESSAGE
-    private static void print_message(String[] lines){
+    private static void print_message(ArrayList<String> lines){
+        // filter out tabs (if not our length calcs are screwed up)
+        lines = filter_tabs(lines);
         // determine maximum length
         int max_length = 0;
         for(String line : lines){
@@ -153,7 +199,10 @@ public class Exercise1 {
 
 
     // PRINT ERROR
-    private static void print_error(){
-        System.err.println("You haven't supplied a message. Try again.");
+    private static void print_error(String error){
+        ArrayList<String> error_msg = new ArrayList<>(1);
+        error_msg.add("ERROR: "+error);
+        print_message(error_msg);
+        print_character();
     }
 }
