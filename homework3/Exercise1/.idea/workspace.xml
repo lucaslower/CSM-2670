@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfe88328-11d2-4e98-ada2-19ad3050fd8b" name="Default Changelist" comment="" />
+    <list default="true" id="cfe88328-11d2-4e98-ada2-19ad3050fd8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Exercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercise1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise2/src/Exercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise2/src/Exercise2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/src/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercise1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            <state relative-caret-position="105">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,7 +71,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +88,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,16 +143,18 @@
       <workItem from="1548965716863" duration="1407000" />
       <workItem from="1549479176007" duration="1403000" />
       <workItem from="1549566047003" duration="4649000" />
+      <workItem from="1549604119242" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8445000" />
+    <option name="totallyTimeSpent" value="8521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2025417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20413026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,20 +189,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Exercise1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fortunes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
           <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercise1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

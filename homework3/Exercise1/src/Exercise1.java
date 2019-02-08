@@ -1,13 +1,11 @@
 /*
-CSM 2670 Exercise Set 1
-
+CSM 2670 -- Homework 3
 Lucas Lower
-01/17/2018
-
-File: Exercise6.java
-
-This program prints a given message, with the message appearing in a thought bubble,
-similar to cowsay.
+02/07/2019
+Exercise1.java
+Displays a random fortune if no fortune number is supplied--otherwise displays the fortune number supplied.
+(displays inside an ascii character's thought bubble akin to cowsay).
+Usage: Exercise1 [debug] [fortune number]
 */
 
 import java.util.*;

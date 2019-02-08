@@ -1,3 +1,11 @@
+/*
+CSM 2670 -- Homework 3
+Lucas Lower
+02/07/2019
+Exercise2.java
+Plays a game of rock, paper, scissors, lizard, spock with the user.
+Usage: Exercise2 (interactive)
+*/
 import java.util.*;
 
 public class Exercise2 {
