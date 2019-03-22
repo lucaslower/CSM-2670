@@ -1,3 +1,12 @@
+/*
+CSM 2670 -- Homework 4
+Lucas Lower
+03/21/2019
+
+Exercise03Checkers.java
+
+Draws a red/black checkerboard with white circle checkers in the correct spots.
+*/
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.Rectangle2D;

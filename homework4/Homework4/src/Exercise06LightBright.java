@@ -1,3 +1,13 @@
+/*
+CSM 2670 -- Homework 4
+Lucas Lower
+03/21/2019
+
+Exercise06LightBright.java
+
+Presents a black screen which is actually a by default 50x50 grid.
+When a block within the grid is clicked or dragged over, it is toggled between white and black.
+*/
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -13,8 +23,6 @@ public class Exercise06LightBright extends JFrame {
     // BLOCK CLASS
     private static class Block{
 
-        private static final Random rand = new Random();
-
         public boolean on = false;
         private int col;
         private int row;
@@ -27,9 +35,7 @@ public class Exercise06LightBright extends JFrame {
         public void draw(Graphics g, double w, double h){
             // determine position
             double x = w * col;
-            x += col;
             double y = h * row;
-            y += row;
 
             // draw block
             Graphics2D g2d = (Graphics2D) g;
@@ -88,8 +94,8 @@ public class Exercise06LightBright extends JFrame {
         public void toggle_block(MouseEvent e){
             Point click = e.getPoint();
             // determine which block was clicked
-            int col = (int) Math.floor(click.x / (CELL_WIDTH+1));
-            int row = (int) Math.floor(click.y / (CELL_HEIGHT+1));
+            int col = (int) Math.floor(click.x / CELL_WIDTH);
+            int row = (int) Math.floor(click.y / CELL_HEIGHT);
             // we check our array bounds because drag events could be delivered
             // from outside of the frame (where no blocks are)
             if(col < GRID_SIZE && row < GRID_SIZE){
@@ -108,9 +114,7 @@ public class Exercise06LightBright extends JFrame {
             super.paintComponent(g);
             // determine cell dimensions each repaint
             CELL_WIDTH = (float) getWidth() / GRID_SIZE;
-            CELL_WIDTH--;
             CELL_HEIGHT = (float) getHeight() / GRID_SIZE;
-            CELL_HEIGHT--;
             // draw every block
             for(Block[] row : blocks){
                 for(Block b : row){

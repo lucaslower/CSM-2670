@@ -1,3 +1,12 @@
+/*
+CSM 2670 -- Homework 4
+Lucas Lower
+03/21/2019
+
+Exercise04Grid.java
+
+Draws a by default 50x50 grid of randomly colored blocks, whose states (color) are saved over repaints.
+*/
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.Rectangle2D;

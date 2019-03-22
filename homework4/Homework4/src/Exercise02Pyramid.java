@@ -1,3 +1,14 @@
+/*
+CSM 2670 -- Homework 4
+Lucas Lower
+03/21/2019
+
+Exercise02Pyramid.java
+
+Draws a blue rectangle 100% of the window height and 80% of the width.
+Inside this rectangle, a pyramid of NUM_ROWS (member of DrawPanel) height and width is drawn.
+"Blocks" of the pyramid are scaled to fit accordingly, and are colored orange with red borders.
+*/
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.Rectangle2D;
