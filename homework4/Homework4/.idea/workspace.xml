@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="887853aa-b05d-4f83-9c30-a7525186a76e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$Block.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$DrawPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$DrawPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$DrawPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$DrawPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright$DrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework4/Exercise06LightBright.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercise02Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercise02Pyramid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercise03Checkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercise03Checkers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercise04Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercise04Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercise06LightBright.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercise06LightBright.java" afterDir="false" />
-    </list>
+    <list default="true" id="887853aa-b05d-4f83-9c30-a7525186a76e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +36,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exercise04Grid.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Exercise05Particles.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2437#2438#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exercise07RandomWalk1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="254">
+              <caret line="166" column="12" lean-forward="true" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="37" />
               <folding>
                 <element signature="e#0#4943#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -86,12 +77,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exercise08RandomWalk2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+            <state relative-caret-position="129">
+              <caret line="15" column="19" lean-forward="true" selection-end-line="212" />
               <folding>
+                <element signature="e#0#6509#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -122,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/Exercise06LightBright.java" />
         <option value="$PROJECT_DIR$/src/Exercise07RandomWalk1.java" />
         <option value="$PROJECT_DIR$/src/Exercise08RandomWalk2.java" />
+        <option value="$PROJECT_DIR$/src/Exercise05Particles.java" />
       </list>
     </option>
   </component>
@@ -160,7 +153,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553221150541" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553224519221" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -175,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Exercise08RandomWalk2">
+  <component name="RunManager" selected="Application.Exercise05Particles">
     <configuration name="Exercise03Checkers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exercise03Checkers" />
       <module name="Homework4" />
@@ -190,8 +183,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise06LightBright" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercise06LightBright" />
+    <configuration name="Exercise05Particles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise05Particles" />
       <module name="Homework4" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,17 +208,17 @@
     <list>
       <item itemvalue="Application.Exercise03Checkers" />
       <item itemvalue="Application.Exercise04Grid" />
-      <item itemvalue="Application.Exercise06LightBright" />
       <item itemvalue="Application.Exercise07RandomWalk1" />
       <item itemvalue="Application.Exercise08RandomWalk2" />
+      <item itemvalue="Application.Exercise05Particles" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Exercise08RandomWalk2" />
-        <item itemvalue="Application.Exercise07RandomWalk1" />
-        <item itemvalue="Application.Exercise06LightBright" />
+        <item itemvalue="Application.Exercise05Particles" />
         <item itemvalue="Application.Exercise04Grid" />
         <item itemvalue="Application.Exercise03Checkers" />
+        <item itemvalue="Application.Exercise08RandomWalk2" />
+        <item itemvalue="Application.Exercise07RandomWalk1" />
       </list>
     </recent_temporary>
   </component>
@@ -240,18 +233,18 @@
       <option name="presentableId" value="Default" />
       <updated>1553194477756</updated>
       <workItem from="1553194481984" duration="6567000" />
-      <workItem from="1553202501084" duration="17527000" />
+      <workItem from="1553202501084" duration="20767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24094000" />
+    <option name="totallyTimeSpent" value="27334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="23" width="1396" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14623338" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14623338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -260,7 +253,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,16 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercise03Checkers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercise04Grid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -354,12 +337,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercise07RandomWalk1.java">
+    <entry file="file://$PROJECT_DIR$/src/Exercise03Checkers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="105">
+          <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
           <folding>
-            <element signature="e#0#4943#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -367,10 +349,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercise08RandomWalk2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        <state relative-caret-position="129">
+          <caret line="15" column="19" lean-forward="true" selection-end-line="212" />
+          <folding>
+            <element signature="e#0#6509#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercise07RandomWalk1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="166" column="12" lean-forward="true" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#4943#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercise05Particles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
           </folding>
         </state>
       </provider>
